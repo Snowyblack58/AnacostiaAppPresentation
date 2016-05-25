@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #FF876F;
+/*
+#4CAF50
+#CC8244
+#998B80
+#FF876F
+#AEFFC9
+*/
+}
+
+.slide {
+    width: 1000px;
+    height: 650px;
+}
+.content-with-phone {
+    width: 600px;
+    height: 630px;
+/*    margin-top: 325px;*/
+/*    float: right; */
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+#title-text {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    background: #4CAF50;
+    transform: translateY(-50%); 
+    opacity: 0.87;
+}
+#title-text-title {
+    margin-bottom: 10px;  ;
+}
+#title-text-subtitle {
+    font-size: 20px;
+    margin-top: 0px;
+    text-transform: capitalize;
+    opacity: 0.54;
+}

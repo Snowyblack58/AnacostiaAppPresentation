@@ -24,6 +24,8 @@ body {
     text-align: center;
 }
 
+/* SLIDE 1 */
+
 #title-text {
     color: #FFF;
     text-transform: uppercase;
@@ -43,4 +45,64 @@ body {
     margin-top: 0px;
     text-transform: capitalize;
     opacity: 0.54;
+}
+
+#phone-screen-intro {
+	width: 100%;
+	height: 100%;
+}
+#intro-question-mark {
+	color: #000;
+	font-size: 144px;
+	opacity: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	margin: 0;
+}
+#intro-question {
+	color: #000;
+	font-size: 26px;
+	opacity: 0;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	margin: 0;
+}
+
+/* Slide 2 */
+.past #title-text {
+    transform: translateX(500px);
+	opacity: 0;
+	transition: transform 0.25s, opacity 0.25s;
+}
+
+.past .phone-screen {
+	background: #FFF;
+	transition: background 0.25s;
+	transition-delay: 0.5s;
+}
+
+/*
+.past #intro-question-mark {
+	transition: opacity 0.25s, font-size 0.25s;
+	transition-delay: 1s, 2s;
+	opacity: 0.87;
+	font-size: 25px;
+}
+*/
+
+.past #intro-question-mark {
+	transition: opacity 0.25s, font-size 0.35s, visibility 0.35s;
+	transition-delay: 1s, 1.75s, 1.75s;
+	opacity: 0.87;
+	visibility: hidden;
+	font-size: 26px;
+}
+.past #intro-question {
+	transition: opacity 0.25s;
+	transition-delay: 2s;
+	opacity: 0.87;
 }

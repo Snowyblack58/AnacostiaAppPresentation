@@ -51,6 +51,21 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+/* Slide 2 */
+.past #title-text {
+    transform: translateX(500px);
+	opacity: 0;
+	transition: transform 0.25s, opacity 0.25s;
+}
+
+.past .phone-screen {
+	background: #FFF;
+	transition: background 0.25s;
+	transition-delay: 0.5s;
+}
+
+
 #intro-question-mark {
 	color: #000;
 	font-size: 144px;
@@ -71,38 +86,15 @@ body {
 	transform: translate3d(-50%, -50%, 0);
 	margin: 0;
 }
-
-/* Slide 2 */
-.past #title-text {
-    transform: translateX(500px);
-	opacity: 0;
-	transition: transform 0.25s, opacity 0.25s;
-}
-
-.past .phone-screen {
-	background: #FFF;
-	transition: background 0.25s;
-	transition-delay: 0.5s;
-}
-
-/*
-.past #intro-question-mark {
-	transition: opacity 0.25s, font-size 0.25s;
-	transition-delay: 1s, 2s;
-	opacity: 0.87;
-	font-size: 25px;
-}
-*/
-
-.past #intro-question-mark {
+.present #intro-question-mark {
 	transition: opacity 0.25s, font-size 0.35s, visibility 0.35s;
-	transition-delay: 1s, 1.75s, 1.75s;
+	transition-delay: 1s, 1.25s, 1.25s;
 	opacity: 0.87;
 	visibility: hidden;
 	font-size: 26px;
 }
-.past #intro-question {
+.present #intro-question {
 	transition: opacity 0.25s;
-	transition-delay: 2s;
+	transition-delay: 1.5s;
 	opacity: 0.87;
 }

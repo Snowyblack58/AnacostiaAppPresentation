@@ -1,19 +1,26 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: #FF876F;
-/*
-#4CAF50
-#CC8244
-#998B80
-#FF876F
-#AEFFC9
-*/
+    background: #2c3e50;
 }
-
 .slide {
     width: 1000px;
     height: 650px;
 }
+
+.past:not(.constant), .future:not(.constant) {
+	opacity: 0;
+	transition: opacity 0.5s;
+	transition-delay: 0.5s;
+}
+.present {
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+.accent {
+	color: #E84C3D;
+}
+
 .content-with-phone {
     width: 600px;
     height: 630px;
@@ -23,7 +30,6 @@ body {
     margin: 10px;
     text-align: center;
 }
-
 /* SLIDE 1 */
 
 #title-text {
@@ -33,12 +39,12 @@ body {
     font-weight: bold;
     position: absolute;
     top: 50%;
-    background: #4CAF50;
+    background: #27ae60;
     transform: translateY(-50%); 
     opacity: 0.87;
 }
 #title-text-title {
-    margin-bottom: 10px;  ;
+    margin-bottom: 10px;
 }
 #title-text-subtitle {
     font-size: 20px;
@@ -53,48 +59,370 @@ body {
 }
 
 /* Slide 2 */
-.past #title-text {
-    transform: translateX(500px);
-	opacity: 0;
-	transition: transform 0.25s, opacity 0.25s;
+#home-1-phone .phone-screen {
+	background: #3498db;
 }
 
-.past .phone-screen {
+.app {
+	margin: 2px;
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	line-height: 24px;
+	padding: 4px;
+}
+.app-icon {
+	font-size: 36px;
+	font-weight: bold;
+	border: solid 1px #FFF;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	margin-top: 12px;
+}
+
+/* Slide 3 */
+.past #home-1-phone .app-parks, .past #home-1-phone .app-parks div {
+	background: #F1C40F;
+	opacity: 0.87;
+}
+
+#parks-phone .phone-screen {
 	background: #FFF;
-	transition: background 0.25s;
-	transition-delay: 0.5s;
+	color: #000;
 }
 
+#parks-phone li {
+	text-align: left;
+	list-style: none;
+	line-height: 24px;
+}
 
-#intro-question-mark {
+#parks-phone img {
+	width: 150px;
+	margin: 12px;
+}
+
+.list-title {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+.list-subtitle {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+/* Slide 4 */
+#parks-1-phone .phone-screen {
+	background: #FFF;
 	color: #000;
-	font-size: 144px;
-	opacity: 0;
+}
+
+#parks-1-phone li {
+	text-align: left;
+	list-style: none;
+	line-height: 24px;
+}
+
+#parks-1-phone img {
+	width: 150px;
+	margin: 12px;
+}
+
+/* Slide 5 */
+.past #home-2-phone .app-concept, .past #home-2-phone .app-concept div {
+	background: #F1C40F;
+	opacity: 0.87;
+}
+
+#home-2-phone .phone-screen {
+	background: #3498db;
+}
+
+/* Slide 6 */
+#concept-phone .phone-screen {
+	background: #FFF;
+	color: #000;
+}
+
+/* Slide 7 */
+.img-main {
+	width: 250px;
+	margin: 12px;
+	margin-top: 50%;
+	transform: translateY(-25%);
+}
+.img-list {
+	margin-top: 50%;
+	transform: translateY(-35%);
+}
+.img-list-item {
+	width: 250px;
+	margin: 12px;
+	display: inline-block;
+	border: solid 1px #000;
+}
+
+#concept-1-phone .phone-screen {
+	background: #FFF;
+	color: #000;
+}
+
+/* Slide 8 */
+#concept-2-phone .phone-screen {
+	background: #FFF;
+	color: #000;
+}
+
+/* Slide 9 */
+#zones-phone .phone-screen {
+	background: #FFF;
+	color: #000;
+}
+
+/* Slide 10 */
+#zones-1-phone .phone-screen {
+	background: #FFF;
+	color: #000;
+}
+
+/* Slide 11 */
+.past #home-3-phone .app-app, .past #home-3-phone .app-app div {
+	background: #F1C40F;
+	opacity: 0.87;
+}
+
+#home-3-phone .phone-screen {
+	background: #3498db;
+}
+
+/* Slide 12 */
+#app-main-phone .phone-screen {
+	background: #FFF;
+}
+
+.phone-appbar {
+	background: #4CAF50;
+	width: calc(100% - 16px);
+	height: 48px;
+	line-height: 48px;
+	text-align: left;
+	padding-left: 16px;
+	box-shadow: 0 5px 2px #CCC;
+	color: #FFF;
+}
+
+.phone-content-with-appbar {
+	height: calc(100% - 64px);
+	padding-top: 16px;
+	overflow: hidden;
+}
+
+.main-content {
+	width: calc(100% - 16px);
+}
+
+.main-feature {
+	width: 144px;
+	height: 144px;
+	margin: 4px;
+	display: inline-block;
+	box-shadow: 2px 2px 2px #CCC;
+}
+
+.main-feature-icon {
+	width: 144px;
+	height: 120px;
+}
+.main-feature-icon img {
+	width: 48px;
+	height: 48px;
+	margin-top: 36px;
+	opacity: 0.54;
+}
+
+.main-feature-name {
+	width: 144px;
+	height: 24px;
+	line-height: 24px;
+	margin: 0;
+	background: #4CAF50;
+}
+
+/* Slide 13 */
+.past #app-main-phone .main-feature-audio {
+	background: #F1C40F;
+	opacity: 0.87;
+}
+
+#app-audio .phone-screen {
+	color: #000;
+	background: #FFF;
+}
+
+.audio-transcript {
+	width: 280px;
+	height: 408px;
+	margin: 8px auto;
+	opacity: 0.87;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.audio-transcript p {
+	opacity: 0.54;
+}
+.audio-transcript p.active {
+	opacity: 0.87;
+	font-size: 16px;
+	color: #F00;
+}
+
+.audio-controls {
+	opacity: 0.87;
+}
+
+/* Slide 14 */
+#app-main-1-phone .phone-screen {
+	background: #FFF;
+}
+
+/* Slide 15 */
+.past #app-main-1-phone .main-feature-map {
+	background: #F1C40F;
+	opacity: 0.87;
+}
+
+#app-map .phone-screen {
+	background: #FFF;
+}
+
+.phone-transparent-appbar {
+	background: none;
+	width: 309px;
+	height: 48px;
+	line-height: 48px;
+	text-align: left;
+	padding-left: 16px;
+	color: #000;
+	position: absolute;
+}
+
+.phone-content-without-appbar {
+	height: 100%;
+}
+
+.phone-map {
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/img_map.png");
+	background-size: cover;
+}
+
+/* Slide 16 */
+#app-main-2-phone .phone-screen {
+	background: #FFF;
+}
+
+/* Slide 17 */
+.past #app-main-2-phone .main-feature-events {
+	background: #F1C40F;
+	opacity: 0.87;
+}
+
+#app-events-phone .phone-screen {
+	background: #FFF;
+	color: #000;
+}
+
+.event {
+	width: calc(100% - 32px);
+	padding: 12px 16px;
+	height: 32px;
+}
+.event>div {
+	display: inline-block;
+}
+.event-text {
+	float: left;
+	text-align: left;
+}
+.event-title {
+	opacity: 0.87;
+}
+.event-subtitle {
+	opacity: 0.54;
+	font-size: 14px;
+}
+.event-date {
+	float: right;
+	line-height: 32px;
+	font-size: 14px;
+	opacity: 0.54;
+}
+
+/* Slide 18 */
+.past #app-events-phone #click-event {
+	background: #F1C40F;
+	opacity: 0.87;
+}
+
+#app-event-info-phone .phone-screen {
+	background: #FFF;
+	color: #000;
+}
+
+#app-event-info-phone iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/* Slide 19 */
+#app-main-3-phone .phone-screen {
+	background: #FFF;
+}
+
+/* Slide 20 */
+#app-questions-phone .phone-screen {
+	background: #FFF;
+	color: #000;
+}
+
+#app-questions p {
+	font-size: 48px;
+	font-weight: bold;
+	margin: 0;
+	line-height: 550px;
+	color: #4CAF50;
+}
+
+/* Slide 21 */
+
+#caboose-text {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    background: #27ae60;
+    opacity: 0.87;
+	padding: 0 100px;
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate3d(-50%, -50%, 0);
-	margin: 0;
 }
-#intro-question {
-	color: #000;
-	font-size: 26px;
-	opacity: 0;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate3d(-50%, -50%, 0);
-	margin: 0;
+#caboose-text-title {
+    margin-bottom: 10px;
 }
-.present #intro-question-mark {
-	transition: opacity 0.25s, font-size 0.35s, visibility 0.35s;
-	transition-delay: 1s, 1.25s, 1.25s;
-	opacity: 0.87;
-	visibility: hidden;
-	font-size: 26px;
-}
-.present #intro-question {
-	transition: opacity 0.25s;
-	transition-delay: 1.5s;
-	opacity: 0.87;
+#caboose-text-subtitle {
+    font-size: 20px;
+    margin-top: 0px;
+	text-transform: none;
+    opacity: 0.54;
 }

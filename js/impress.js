@@ -205,7 +205,7 @@
         
         perspective: 1000,
         
-        transitionDuration: 1000
+        transitionDuration: 500
     };
     
     // it's just an empty function ... and a useless comment.
@@ -717,6 +717,7 @@
                              api.next();
                              break;
                 }
+				document.getElementsByClassName("phone")[0].className = "phone " + document.getElementsByClassName("active")[0].id;
                 
                 event.preventDefault();
             }
@@ -747,19 +748,19 @@
             }
         }, false);
         
-        // delegated handler for clicking on step elements
-        document.addEventListener("click", function ( event ) {
-            var target = event.target;
-            // find closest step element that is not active
-            while ( !(target.classList.contains("step") && !target.classList.contains("active")) &&
-                    (target !== document.documentElement) ) {
-                target = target.parentNode;
-            }
-            
-            if ( api.goto(target) ) {
-                event.preventDefault();
-            }
-        }, false);
+//        // delegated handler for clicking on step elements
+//        document.addEventListener("click", function ( event ) {
+//            var target = event.target;
+//            // find closest step element that is not active
+//            while ( !(target.classList.contains("step") && !target.classList.contains("active")) &&
+//                    (target !== document.documentElement) ) {
+//                target = target.parentNode;
+//            }
+//            
+//            if ( api.goto(target) ) {
+//                event.preventDefault();
+//            }
+//        }, false);
         
         // touch handler to detect taps on the left and right side of the screen
         // based on awesome work of @hakimel: https://github.com/hakimel/reveal.js

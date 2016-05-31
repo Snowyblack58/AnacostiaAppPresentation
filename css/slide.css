@@ -426,3 +426,23 @@ body {
 	text-transform: none;
     opacity: 0.54;
 }
+
+/* Slide 22 */
+#references-phone .phone-screen {
+	background: #FFF;
+	color: #000;
+}
+
+#references-phone ul {
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 450px;
+	padding-left: 0;
+	margin: 8px;
+}
+
+#references-phone li {
+	text-align: left;
+	list-style: none;
+	margin-top: 12px;
+}

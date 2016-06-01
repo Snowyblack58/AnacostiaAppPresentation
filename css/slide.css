@@ -131,8 +131,7 @@ body {
 }
 
 #parks-1-phone img {
-	width: 150px;
-	margin: 12px;
+	width: 289px;
 }
 
 /* Slide 5 */
@@ -157,6 +156,7 @@ body {
 	margin: 12px;
 	margin-top: 50%;
 	transform: translateY(-25%);
+	border: solid 1px #000;
 }
 .img-list {
 	margin-top: 50%;

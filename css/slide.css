@@ -402,6 +402,20 @@ body {
 	color: #4CAF50;
 }
 
+/* Slide 20.5 */
+#future-phone .phone-screen {
+	background: #FFF;
+	color: #000;
+}
+
+#future-phone img {
+	width: 325px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
 /* Slide 21 */
 
 #caboose-text {
